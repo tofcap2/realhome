@@ -1,0 +1,375 @@
+/*
+Theme Name:   realhome
+Description:  Theme test
+Author:       Christophe Capdelacarrere
+Author URI:   http://www.realhome.com
+Template:     realhome
+Version:      1.0.0
+*/
+
+body{
+    margin:0;
+    font-family: "Raleway", serif;
+}
+
+/*============HEADER==============*/
+
+header{
+    display: flex;
+    height:80px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px #919191;
+}
+
+header img{
+    position: relative;
+    left: -100px;
+    width: 200px;
+    height: 50px;
+}
+
+header nav div ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header nav div ul li{
+    list-style-type: none;
+    display:block;
+}
+
+header nav div ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color:#000;
+}
+
+.header-menu ul li{
+    padding: 1rem;
+}
+
+.header-menu ul li:hover{
+    background-color: #f2f2f2;
+}
+
+.header-menu ul li:focus{
+    background-color: #f2f2f2;
+}
+
+.header-menu-sociaux{
+    margin-left: 50px;
+}
+
+.header-menu-sociaux ul li{
+    padding: 10px;
+    font-size: 2em;
+}
+
+.header-menu-sociaux ul li a{
+    display:none;
+}
+
+/*==========FRONT-PAGE============*/
+
+.front-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.main-picture{
+    position:relative;
+    max-width: 100%;
+}
+
+.front-content{
+    position: absolute;
+    color: #fff;
+}
+
+.front-content h1{
+    margin-top: 0;
+}
+
+.front-presentation{
+    display: flex;
+    padding: 30px;
+    font-size: 1.8em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.front-presentation p{
+    display: flex;
+    font-size: 0.6em;
+    width: 500px;
+}
+
+.sav{
+    background-color: #F8F8F8;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.sav-content{
+    margin:15px;
+}
+
+.sav-content i{
+    font-size: 2em;
+}
+
+.front-property{
+    background-color: #f2f2f2;
+}
+
+.front-property h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+/*=============HOME===============*/
+
+.home-bloc-top{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.singlecard{
+    margin-left: 100px;
+    width: 70%;
+}
+
+.singlecard h2{
+    text-align: left;
+}
+
+.homecta{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.homecta a{
+    list-style-type: none;
+    text-decoration: none;
+    background-color: red;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sidebar{
+    color: #000;
+    text-align: left;
+    width: 60%;
+}
+
+.sidebar div ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar div ul li{
+    list-style-type: none;
+    margin-top: 10px;
+
+}
+
+.sidebar div ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar div{
+    margin-bottom: 70px;
+}
+
+/*=======SINGLE-REALISATION=======*/
+
+.single-real{
+    margin-right: 80px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.single-rens{
+    display: flex;
+}
+
+.single-image{
+    width: 700px;
+    height: 100%;
+}
+
+.single-right{
+    display: block;
+    width: calc(100% - 600px);
+    margin-left: 40px;
+}
+
+.single-right-rens{
+    display: block;
+}
+
+.single-price{
+    color: red;
+    font-size: 2em;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.single-price::before{
+    color: grey;
+}
+/*--------------------------------*/
+
+.single-demo{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.single-news{
+    display: flex;
+}
+
+.single-singlecard{
+    width: 200px;
+    margin-right: 50px;
+}
+
+.single-img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.single-singlecard a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/*===========PROPERTY=============*/
+
+.property{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.property-title{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.property-singlecard{
+    background-color: white;
+    text-align: center;
+    border: 1px solid grey;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.property-container{
+    margin-top: 150px;
+}
+
+.property-link{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.property-picture{
+}
+
+.property-house{
+    margin-top: 7px;
+}
+
+.property-house h2{
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.property-info{
+    display: flex;
+    justify-content: center;
+}
+
+.property-info p{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.property-price{
+    font-size: 1.5em;
+    color: red;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+/*============FOOTER==============*/
+
+.footer{
+    display: flex;
+    height: 200px;
+    background-color: #5E5E5E;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.footer-menu-sociaux nav div ul{
+    padding: 0;
+    text-align: center;
+}
+
+.footer-menu-sociaux nav div ul li{
+    margin: 5px;
+    font-size: 1.7em;
+
+}
+
+.footer-menu-sociaux nav div ul a{
+    display: none;
+}
+
+.footer-menu{
+    text-align: left;
+}
+
+.footer-menu nav div ul{
+    padding:0;
+}
+
+.footer-menu nav div ul li{
+    list-style-type: none;
+}
+
+.footer-menu nav div ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-right p:nth-child(2){
+    font-size: 0.9em;
+}
+
+.footer-right p:nth-child(3){
+    color: #E2574C;
+    font-weight: bold;
+}
+
