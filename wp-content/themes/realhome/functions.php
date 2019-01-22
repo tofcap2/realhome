@@ -91,21 +91,7 @@ function themes_taxonomy() {
             'label' => 'Ville',
             'query_var' => true,
             'rewrite' => array(
-                'slug' => 'genre',
-                'with_front' => true
-            ),
-            'hierarchical' => true,
-        )
-    );
-
-    register_taxonomy(
-        'especes',
-        'realisations',
-        array(
-            'label' => 'Espece',
-            'query_var' => true,
-            'rewrite' => array(
-                'slug' => 'espece',
+                'slug' => 'ville',
                 'with_front' => true
             ),
             'hierarchical' => true,

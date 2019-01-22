@@ -1,5 +1,3 @@
-<?php /* Template Name: Gabarit realisations */?>
-
 <?php get_header();?>
 
 <?php if(have_posts()) :?>
@@ -12,30 +10,20 @@
             'hide empty'=> false
         )); ?>
         <?php foreach ($villes as $ville){?>
-            <li><a href="<?php echo get_term_link($ville->slug, 'ville') ;?>"><?php echo  $ville->name ;?></a></li>
+            <li><a href="<?php echo get_term_link($ville->slug, 'ville') ;?>"><?php echo $ville->name ;?></a></li>
         <?php } ;?>
     </div>
 
     <?php the_content() ;?>
 <?php endif;?>
 
-<?php $Posts = get_the_ID()?>
-<?php
-    $args = array(
-        'post_type' => 'realisations',
-        'posts_per_page' => 9,
-        'orderby' => 'ASC',
-        'post__not_in' => array($Posts),
-);
-?>
+<?php wp_reset_postdata() ;?>
 
-<!--The Query-->
-<?php $the_query = new WP_Query($args);?>
 <!--The Loop-->
-    <div class="property-container">
-        <?php if ( $the_query->have_posts() ) : ?>
-            <div class="property">
-                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+<div class="property-container">
+    <?php if ( have_posts() ) : ?>
+        <div class="property">
+            <?php while (have_posts() ) : the_post(); ?>
                 <a class="property-link" href="<?php the_permalink() ?>">
 
                     <div class="property-singlecard">
@@ -58,10 +46,10 @@
                     </div>
                 </a>
 
-                <?php endwhile; ?>
-            </div>
-        <?php endif; ?>
-    </div>
+            <?php endwhile; ?>
+        </div>
+    <?php endif; ?>
+</div>
 
 
 <?php get_footer(); ?>

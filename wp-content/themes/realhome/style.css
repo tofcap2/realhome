@@ -24,7 +24,7 @@ header{
 
 header img{
     position: relative;
-    left: -100px;
+    left: -80px;
     width: 200px;
     height: 50px;
 }
@@ -37,6 +37,7 @@ header nav div ul{
 header nav div ul li{
     list-style-type: none;
     display:block;
+    font-family: "Playfair display", serif;
 }
 
 header nav div ul li a{
@@ -61,9 +62,17 @@ header nav div ul li a{
     margin-left: 50px;
 }
 
-.header-menu-sociaux ul li{
-    padding: 10px;
-    font-size: 2em;
+.header-menu-sociaux nav div ul li{
+    border: 1px solid #000;
+    background-color: #fff;
+    background-size: 100px;
+    border-radius: 50px;
+    color: #3C3C3C;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    margin: 5px;
 }
 
 .header-menu-sociaux ul li a{
@@ -126,12 +135,75 @@ header nav div ul li a{
 
 .front-property{
     background-color: #f2f2f2;
+    padding-bottom: 50px;
 }
 
 .front-property h2 {
     margin-top: 0;
+    padding-top: 30px;
     text-align: center;
 }
+
+.front-property-container{
+    margin-top: 70px;
+}
+
+.front-property p{
+    text-align: center;
+}
+
+.front-hr{
+    width: 100px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: red;
+    border: 1px solid red;
+}
+
+.link-toutes{
+    text-align: center;
+}
+
+.link-toutes a{
+    list-style-type: none;
+    text-decoration: none;
+    background-color: red;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.front-agent{
+    display:flex;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.front-agent-rens{
+    margin-top: 140px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.front-agent-rens hr{
+    width: 100px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: red;
+    border: 1px solid red;
+    margin-left: 0
+}
+
+.partenaire{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
 
 
 /*=============HOME===============*/
@@ -320,16 +392,207 @@ header nav div ul li a{
     color: red;
     margin-top: 7px;
     margin-bottom: 7px;
+    font-family: Arial;
 }
+
+.property-city{
+    font-family: "Playfair display", "serif";
+}
+
+/*============SINGLE==============*/
+
+.singlehome-bloc-top{
+    text-align: center;
+}
+
+.singlehome-container{
+    display: flex;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.singlehome-news{
+    display: block;
+    margin-left: 80px;
+    text-align: left;
+    width: 70%;
+    border-right: 2px solid #BEBEBE;
+    padding-right: 100px;
+}
+
+.singlehome-singlecard{
+    width: 70%;
+    padding-left: 0;
+}
+
+.singlehome-singlecard h2{
+    text-align: left;
+}
+
+.alignnone{
+    height: 100%;
+    width: 700px;
+}
+
+.singlehome-auteur{
+    display:flex;
+}
+
+.commentlist{
+    background-color: #f2f2f2;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.comment-meta a{
+    color: #000;
+    text-decoration: none;
+}
+
+.comment-reply-link{
+    color: #000;
+    text-decoration: none;
+}
+
+.logged-in-as a{
+    color: #000;
+    text-decoration: none;
+}
+
+.form-submit input{
+    border: none;
+    background-color: red;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.singlehome-sidebar{
+    color: #000;
+    margin-top: 20px;
+    margin-left: 200px;
+    text-align: left;
+    width: 60%;
+}
+
+.singlehome-sidebar div ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.singlehome-sidebar div ul li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.singlehome-sidebar div ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar div{
+    margin-bottom: 70px;
+}
+
+/*===========CONTACT==============*/
+
+.contact{
+    margin-left: 120px;
+    margin-top: 120px;
+    margin-right: 120px;
+}
+
+.contact-title{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contact-image{
+    margin-bottom: 40px;
+}
+
+.contact-info{
+    display: flex;
+}
+
+.contact-coor{
+    width: 30%;
+}
+
+.contact-coor-texte p{
+    font-size: 0.7em;
+}
+
+.contact-message{
+    margin-left: 60px;
+}
+
+.wpcf7-submit{
+    border: none;
+    background-color: red;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.wpcf7{
+    display: flex;
+}
+/*===========A PROPOS=============*/
+
+.apropos{
+    margin-top: 120px;
+}
+
+.apropos-title{
+    margin-left: 80px;
+}
+
+.apropos-rens{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.apropos-content{
+    display: block;
+    margin-left: 60px;
+}
+
+.equipe{
+    background-color: #fff;
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.equipe-content{
+    border: 1px solid #f2f2f2;
+}
+
+
 /*============FOOTER==============*/
 
 .footer{
     display: flex;
     height: 200px;
-    background-color: #5E5E5E;
+    color: #fff;
+    background-color: #303030;
     justify-content: space-around;
     padding-top: 20px;
     margin-top: 40px;
+}
+
+.footer-left{
+    text-align: center;
 }
 
 .footer-menu-sociaux nav div ul{
@@ -338,8 +601,15 @@ header nav div ul li a{
 }
 
 .footer-menu-sociaux nav div ul li{
-    margin: 5px;
-    font-size: 1.7em;
+    border: 1px solid #000;
+    background-color: #fff;
+    background-size: 100px;
+    border-radius: 50px;
+    color: #3C3C3C;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
 
 }
 
@@ -360,7 +630,7 @@ header nav div ul li a{
 }
 
 .footer-menu nav div ul li a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 

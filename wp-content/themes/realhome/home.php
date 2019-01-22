@@ -4,11 +4,10 @@
 <div class="home-bloc-top" style="background-image:url(<?php echo $img[0];?>)">
     <h1><?php echo $title ;?>
     </h1>
+
 </div>
 <div class="container">
     <?php if(have_posts()) :?>
-
-
         <div class="news">
             <?php while (have_posts()) : the_post(); ?>
                 <div class="singlecard">

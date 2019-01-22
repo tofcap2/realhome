@@ -3,7 +3,7 @@
     <div class="footer">
         <div class="footer-left">
             <div>
-                <img src="<?php echo bloginfo('template_url') ;?>/image/logo-1.png" alt="Logo" >
+                <img src="<?php echo bloginfo('template_url') ;?>/image/logo-2.png" alt="Logo" >
             </div>
             <div class="footer-menu-sociaux">
                 <nav><?php  wp_nav_menu(array('theme_location' => 'menu-secondaire'));?></nav>

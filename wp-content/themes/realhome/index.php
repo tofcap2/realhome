@@ -1,7 +1,9 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: CAP2
- * Date: 18/01/2019
- * Time: 10:25
- */
+<?php get_header();?>
+
+<?php if(have_posts()) :?>
+    <?php while (have_posts()) : the_post(); ?>
+
+    <?php endwhile;?>
+<?php endif;?>
+
+<?php get_footer(); ?>
