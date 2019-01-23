@@ -853,6 +853,40 @@ header nav div ul li a{
     border: 1px solid #f2f2f2;
 }
 
+@media (min-width: 200px){
+    .equipe{
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+
+    }
+}
+
+@media (min-width: 776px){
+    .equipe{
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+
+    }
+}
+
+@media (min-width: 768px){
+    .equipe{
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px){
+    .equipe{
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1200px){
+    .equipe{
+        flex-wrap: wrap;
+    }
+}
 
 /*============FOOTER==============*/
 
