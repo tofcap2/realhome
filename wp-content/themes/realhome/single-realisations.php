@@ -12,7 +12,6 @@
                 <div class="single-right">
                     <div class="single-right-rens">
                         <p class="single-price fas fa-bookmark">  <?php the_field('prix') ;?> €</p>
-                        <hr>
                         <p class="single-city">Ville: <?php the_field('ville') ;?></p>
                         <p class="single-room">Nombre de pièces: <?php the_field('chambre') ;?></p>
                         <p class="single-info">Info: <?php the_field('info') ;?></p>
@@ -21,7 +20,6 @@
                     <?php the_content() ;?>
                 </div>
             </div>
-            <hr>
         <?php endwhile;?>
     </div>
 <?php endif;?>

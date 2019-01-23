@@ -11,6 +11,7 @@ function insert_css() {
     // On ajoute le jQuery au thème
     wp_register_script('jquery2','https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js');
     wp_enqueue_script('jquery2');
+    wp_enqueue_script('script');
 
     wp_register_script('scroll','https://unpkg.com/scrollreveal/dist/scrollreveal.min.js');
     wp_enqueue_script('scroll');

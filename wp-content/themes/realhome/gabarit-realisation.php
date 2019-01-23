@@ -7,13 +7,15 @@
         <?php while (have_posts()) : the_post(); ?>
             <h1 class="property-title"><?php the_title() ;?></h1>
         <?php endwhile;?>
-
-        <?php $villes = get_terms( 'ville', array(
-            'hide empty'=> false
-        )); ?>
-        <?php foreach ($villes as $ville){?>
-            <li><a href="<?php echo get_term_link($ville->slug, 'ville') ;?>"><?php echo  $ville->name ;?></a></li>
-        <?php } ;?>
+        <div class="gabarit-ville">
+            <?php $villes = get_terms( 'ville', array(
+                'hide empty'=> false
+            )); ?>
+            <a href="<?php the_permalink() ?>/nos-proprietes">Tous</a>
+            <?php foreach ($villes as $ville){?>
+                <li><a href="<?php echo get_term_link($ville->slug, 'ville') ;?>"><?php echo  $ville->name ;?></a></li>
+            <?php } ;?>
+        </div>
     </div>
 
     <?php the_content() ;?>
@@ -46,7 +48,6 @@
                         <h2 class="property-house"><?php the_field('adresse') ?></h2>
                         <p class="property-city"><?php the_field('ville') ?></p>
                         <p class="property-price"><?php the_field('prix') ?> €</p>
-                        <hr>
                         <div class="property-info">
                             <p><?php the_field('surface') ?> m²</p>
                             <p><?php the_field('chambre') ?> chambres</p>

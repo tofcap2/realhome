@@ -47,7 +47,7 @@ header nav div ul li a{
 }
 
 .header-menu ul li{
-    padding: 1rem;
+    padding: 1.8rem 1rem;
 }
 
 .header-menu ul li:hover{
@@ -77,6 +77,70 @@ header nav div ul li a{
 
 .header-menu-sociaux ul li a{
     display:none;
+}
+
+.header nav div ul li a {
+    text-transform: capitalize;
+    color: #333;
+    transition: background-color .2s, color .2s;
+}
+
+.header nav div ul li a:focus {
+     background-color: #333;
+     color: #fff;
+ }
+
+
+.header nav div ul li.active > a {
+    background-color: #333;
+    color: #fff;
+}
+
+/*========RESPONSIVE HEADER=======*/
+
+@media (min-width: 576px){
+    .header-menu-sociaux{
+        display: none;
+    }
+
+    header img{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .header-menu-sociaux{
+        display: none;
+    }
+
+    header img{
+        left: 0;
+        display: block;
+    }
+}
+
+@media (min-width: 992px){
+
+    .header-menu-sociaux{
+        display: none;
+    }
+
+    header img{
+        left: 20px;
+        display: block;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .header-menu-sociaux{
+        display: block;
+    }
+
+    header img{
+        left: -80px;
+        display: block;
+    }
 }
 
 /*==========FRONT-PAGE============*/
@@ -202,9 +266,142 @@ header nav div ul li a{
     align-items: center;
     justify-content: space-evenly;
 }
+/*====RESPONSIVE FRONT====*/
 
+@media (min-width: 200px){
+    .front-content h1{
+        margin-top: 0;
+        font-size: 0.8em;
+    }
+    .front-presentation{
+        display: flex;
+        flex-flow: column;
+    }
+    .sav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sav-content{
+        width: 300px;
+    }
+    .front-agent{
+        display: flex;
+        flex-flow: column;
+    }
+    .front-agent-rens{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
+@media (min-width: 576px){
+    .front-content h1{
+        margin-top: 0;
+        font-size: 1em;
+    }
+    .front-presentation{
+        display: flex;
+        flex-flow: column;
+    }
+    .sav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sav-content{
+        width: 280px;
+    }
+    .front-agent{
+        display: flex;
+        flex-flow: column;
+    }
+    .front-agent-rens{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
+@media (min-width: 768px){
+    .front-content h1{
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+    .front-presentation{
+        display: flex;
+        flex-flow: column;
+    }
+    .sav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sav-content{
+        width: 280px;
+    }
+    .front-agent{
+        display: flex;
+        flex-flow: column;
+    }
+    .front-agent-rens{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 992px){
+    .front-content h1{
+        margin-top: 0;
+        font-size: 2em;
+    }
+
+    .front-presentation{
+        display: flex;
+        flex-flow: row;
+    }
+    .sav{
+        display: flex;
+    }
+    .sav-content{
+        width: 280px;
+    }
+    .front-agent{
+        display: flex;
+        flex-flow: row;
+    }
+    .front-agent-rens{
+        margin-top: 140px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1200px){
+    .front-content h1{
+        margin-top: 0;
+        font-size: 2em;
+    }
+
+    .front-presentation{
+        display: flex;
+        flex-flow: row;
+    }
+    .sav{
+        display: flex;
+    }
+    .sav-content{
+        width: 300px;
+    }
+    .front-agent{
+        display: flex;
+        flex-flow: row;
+    }
+    .front-agent-rens{
+        margin-top: 140px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
 
 /*=============HOME===============*/
 
@@ -257,7 +454,6 @@ header nav div ul li a{
 .sidebar div ul li{
     list-style-type: none;
     margin-top: 10px;
-
 }
 
 .sidebar div ul li a{
@@ -355,7 +551,7 @@ header nav div ul li a{
 }
 
 .property-container{
-    margin-top: 150px;
+    margin-top: 70px;
 }
 
 .property-link{
@@ -379,6 +575,7 @@ header nav div ul li a{
 .property-info{
     display: flex;
     justify-content: center;
+    border-top: 1px solid #000;
 }
 
 .property-info p{
@@ -392,12 +589,45 @@ header nav div ul li a{
     color: red;
     margin-top: 7px;
     margin-bottom: 7px;
-    font-family: Arial;
+    font-family: "Arial", serif;
 }
 
 .property-city{
     font-family: "Playfair display", "serif";
 }
+
+.gabarit-ville{
+    display: flex;
+    justify-content: center;
+}
+
+.gabarit-ville a{
+    list-style-type: none;
+    margin: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.gabarit-ville a:hover{
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}
+
+.gabarit-ville li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+.gabarit-ville li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.gabarit-ville li a:hover{
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}
+
 
 /*============SINGLE==============*/
 
@@ -408,7 +638,7 @@ header nav div ul li a{
 .singlehome-container{
     display: flex;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .singlehome-news{
@@ -438,15 +668,25 @@ header nav div ul li a{
     display:flex;
 }
 
-.commentlist{
+.comment-body{
     background-color: #f2f2f2;
     width: 500px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.children li div{
+    background-color: #BEBEBE;
     border-radius: 10px;
 }
 
 .comment-meta a{
     color: #000;
     text-decoration: none;
+}
+.comment-meta p{
+    font-weight: bold;
 }
 
 .comment-reply-link{
@@ -472,7 +712,7 @@ header nav div ul li a{
 .singlehome-sidebar{
     color: #000;
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 100px;
     text-align: left;
     width: 60%;
 }
@@ -525,11 +765,49 @@ header nav div ul li a{
     font-size: 0.7em;
 }
 
-.contact-message{
-    margin-left: 60px;
+.contact-input{
+    margin-left: 120px;
 }
 
-.wpcf7-submit{
+.contact-subinput{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact-name label span input{
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.contact-mail label span input{
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.contact-message{
+    margin-left: 0;
+}
+
+.contact-message label span textarea{
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 640px;
+}
+
+.contact-mail{
+    margin-left: 40px;
+}
+
+.contact-submit{
+    text-align: center;
+}
+
+.contact-submit input{
     border: none;
     background-color: red;
     padding: 15px 25px;
@@ -539,9 +817,6 @@ header nav div ul li a{
     margin-top: 20px;
 }
 
-.wpcf7{
-    display: flex;
-}
 /*===========A PROPOS=============*/
 
 .apropos{
@@ -643,3 +918,6 @@ header nav div ul li a{
     font-weight: bold;
 }
 
+/*===========BURGER===========*/
+
+.

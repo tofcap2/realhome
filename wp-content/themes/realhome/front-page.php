@@ -11,8 +11,10 @@
             </div>
         </div>
         <div class="front-presentation">
+
             <?php the_field('presentation') ;?>
-            <?php the_field('textepresentation') ;?>
+
+                <?php the_field('textepresentation') ;?>
         </div>
 
         <div class="sav">
@@ -61,7 +63,6 @@
                                 <h2 class="property-house"><?php the_field('adresse') ?></h2>
                                 <p><?php the_field('ville') ?></p>
                                 <p class="property-price"><?php the_field('prix') ?> €</p>
-                                <hr>
                                 <div class="property-info">
                                     <p><?php the_field('surface') ?> m²</p>
                                     <p><?php the_field('chambre') ?> chambres</p>
