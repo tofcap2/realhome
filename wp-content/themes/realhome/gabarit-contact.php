@@ -8,12 +8,11 @@
         <h1 class="contact-title">
             <?php the_title() ;?>
         </h1>
-        <div class="contact-image">
-            <?php if ( has_post_thumbnail() ) : ?>
-                <img class="main-picture" src="<?php the_post_thumbnail_url('full'); ?>" />
-            <?php endif; ?>
+        <div class="contact-map">
+            <?php  echo do_shortcode('[osm_map_v3 map_center="48.1074,-1.6761" zoom="15" width="100%" height="450" post_markers="1"]');?>
         </div>
         <div class="contact-info">
+
             <div class="contact-coor">
                 <h2><?php the_field('titre') ;?></h2>
                 <div class="contact-coor-texte"><?php the_field('texte') ;?></div>

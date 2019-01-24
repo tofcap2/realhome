@@ -11,7 +11,9 @@ function insert_css() {
     // On ajoute le jQuery au thème
     wp_register_script('jquery2','https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js');
     wp_enqueue_script('jquery2');
-    wp_enqueue_script('script');
+
+    // On ajoute le script au thème
+    wp_enqueue_script('script', get_template_directory_uri().'/script.js', '', '', true);
 
     wp_register_script('scroll','https://unpkg.com/scrollreveal/dist/scrollreveal.min.js');
     wp_enqueue_script('scroll');
@@ -23,6 +25,15 @@ function insert_css() {
     //Playfair Display
     wp_register_style('font','https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
     wp_enqueue_style('font');
+}
+
+// page option ACF
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title' 	=> 'Theme Footer Settings',
+        'menu_title'	=> 'Footer',
+    ));
 }
 
 //Fonction pour insérer le footer

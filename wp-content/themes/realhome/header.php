@@ -13,7 +13,7 @@
 </head>
 <body <?php body_class() ;?>>
 
-    <header>
+    <header class="header">
         <img src="<?php echo bloginfo('template_url') ;?>/image/logo-1.png" alt="Logo" >
         <div class="header-menu">
             <nav><?php  wp_nav_menu(array('theme_location' => 'menu-principal'));?></nav>
@@ -22,6 +22,9 @@
             <nav><?php  wp_nav_menu(array('theme_location' => 'menu-secondaire'));?></nav>
         </div>
 
+        <div class="toggle_btn">
+            <span></span>
+        </div>
 
     </header>
 

@@ -76,7 +76,7 @@
                     <?php endwhile; ?>
                 </div>
                 <div class="link-toutes">
-                    <a  href="http://localhost/dcdev/realhome/nos-proprietes/">Voir toutes</a>
+                    <a href="<?php echo site_url()?>/nos-proprietes/">Voir toutes..</a>
                 </div>
             </div>
         <?php endif; ?>

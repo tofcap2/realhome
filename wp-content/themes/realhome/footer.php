@@ -15,7 +15,13 @@
         </div>
         <div class="footer-right">
             <h3>Contact</h3>
-            <?php the_field('contact') ;?>
+            <p><?php the_field('adresse_footer','option') ;?></p>
+            <p><?php the_field('freephone_footer','option') ;?></p>
+            <p><?php the_field('telephone_footer','option') ;?></p>
+            <p><?php the_field('fax_footer','option') ;?></p>
+            <p><?php the_field('mail_footer','option') ;?></p>
+
+
         </div>
     </div>
 
